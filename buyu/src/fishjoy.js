@@ -57,7 +57,7 @@ game.load = function(container)
 	this.screenHeight = window.innerHeight;
 	
 	//load info
-	var div = Q.createDOM("div", {innerHTML: "微信搜索mayi_zzfriend，关注我们获取HTML5...<br>", style:
+	var div = Q.createDOM("div", {innerHTML: "游戏正在加载中，请耐心等待...<br>", style:
 	{
 		id: "loader",
 		position: "absolute",
@@ -92,7 +92,7 @@ game.load = function(container)
 
 game.onLoadLoaded = function(e)
 {
-	var content = "微信搜索mayi_zzfriend，关注我们获取HTML5...<br>(" + Math.round(e.target.getLoadedSize()/e.target.getTotalSize()*100) + "%)";
+	var content = "游戏正在加载中，请耐心等待...<br>(" + Math.round(e.target.getLoadedSize()/e.target.getTotalSize()*100) + "%)";
 	this.loader.innerHTML = content;
 };
 
